@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
+<html>
 <head>
+	<meta charset="utf-8">
 	<title>Zeeb - HTML Assessment</title>
 </head>
 <body>
 	<h1>HTML Assessment</h1>
 
-	<h2>Text</h2>
+	<h2>TEXT</h2>
 
 	<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum justo a congue luctus. Nunc dignissim cursus pharetra. Maecenas felis dolor, placerat sit amet ornare vel, condimentum et nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris at magna in elit maximus cursus id nec leo. Nunc facilisis sed nunc id faucibus. </p>
 
@@ -14,7 +15,7 @@
 
 	<p><b>Nulla</b> sit amet enim placerat, rutrum felis tristique, iaculis est. Suspendisse vestibulum, tortor vitae vehicula euismod, eros lectus consequat dui, quis venenatis metus libero id felis. Etiam metus ligula, aliquam eu urna sit amet, porttitor congue erat. Quisque iaculis libero sed rhoncus placerat. Cras ac odio ex</p>
 
-	<h2>Table</h2>
+	<h2>TABLE</h2>
 	<table border="1">
 		<thead>
 			<tr><th rowspan="2">Team Name</th><th colspan="2">first half</th><th colspan="2">second half</th><th rowspan="2">final</th></tr>
@@ -29,7 +30,7 @@
 		</tfoot>
 	</table>
 
-	<h2>List</h2>
+	<h2>LIST</h2>
 	<ul>
 		<li><img src="https://1000logos.net/wp-content/uploads/2017/01/Denver-broncos-Logo-1024x640.png" height="70">
 			<br><a href="https://www.denverbroncos.com/" target="_blank">Denver Broncos</a></li>
@@ -44,7 +45,7 @@
 		</ul>
 	</ul>
 	<ul>
-		<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chicago_Bears_logo.svg/386px-Chicago_Bears_logo.svg.png?20200601002920" height="70"><br><a href="https://www.chicagobears.com/" target="_blank">Chicago Bears</a></li>
+		<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chicago_Bears_logo.svg/386px-Chicago_Bears_logo.svg.png?20200601002920" height="50"><br><a href="https://www.chicagobears.com/" target="_blank">Chicago Bears</a></li>
 		<ul>
 			<li>Coach: Gary Kubiak</li>
 			<li>QB:</li>
@@ -54,7 +55,43 @@
 			</ol>
 		</ul>
 	</ul>
-	<h2>Form</h2>
+	<h2>FORM</h2>
+	<form>
+		
+			<label for="firstame">First Name:</label>
+			<input type="text" name="firstname" id="firstname" value="Bob">
+			<label for="lastname">Last Name:</label>
+			<input type="text" name="lastname" id="lastname" value="Dobbs">
+			<br>
+			<label for="sports">Favorite Sport:</label>
+			<br>
+			<select id="sports" name="cars">
+  				<option value="soccer">Soccer</option>
+  				<option value="football">Football</option>
+  				<option value="rugby">Rugby</option>
+  				<option value="hockey">Hockey</option>
+			</select>
+			<br>
+			I have:
+			<input type="checkbox" id="attended" name="attended" value="attended">
+  			<label for="attended"> Attended</label>
+  			<input type="checkbox" id="played" name="played" value="played">
+  			<label for="played"> Played</label>
+  			<input type="checkbox" id="coached" name="coached" value="coached">
+  			<label for="coached"> Coached</label>
+			<input type="checkbox" id="bet" name="bet" value="bet">
+  			<label for="bet"> Bet on</label>
+  			<br> this sport.<br>
+  			For this sport I prefer the:
+  			<input type="radio" id="amateur" name="level_preferred" value="amateur">
+  			<label for="amateur">Amateur</label>
+  			<input type="radio" id="college" name="level_preferred" value="college">
+  			<label for="college">College</label>
+  			<input type="radio" id="professional" name="level_preferred" value="professional">
+  			<label for="professional">Professional</label>
+  			<br>
+  			<input type="submit" value="Submit Query">
+	</form>
 </body>
 
 </html>
